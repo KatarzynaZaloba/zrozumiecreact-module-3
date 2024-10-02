@@ -6,7 +6,7 @@ const emojis = ["🚀", "🎶", "🎁", "🎉", "✨"];
 export function List() {
     return (
         <>
-            <button onClick={() => alert(`Liczba emoji: ${emojis.length}`)}>
+            <button className="list__btn" onClick={() => alert(`Liczba emoji: ${emojis.length}`)}>
             Pokaż liczbę emoji
             </button>
             <ul className="list">

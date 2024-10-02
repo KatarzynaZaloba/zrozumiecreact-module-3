@@ -6,3 +6,18 @@
     gap: 30px;
     padding: 30px;
 }
+
+.list__btn {
+    background: transparent;
+    border: solid 1px;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    color: salmon;
+}
+
+.list__btn:hover {
+    color: white;
+    background: salmon;
+}
