@@ -1,9 +1,15 @@
 import {Item} from "../Item/Item.jsx";
-import styles from "./List.module.css";
 import styled from "styled-components";
 
 const emojis = ["🚀", "🎶", "🎁", "🎉", "✨"];
 
+const StyledList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  padding: 30px;
+`;
 const StyledButton = styled.button`
   background: transparent;
   border: solid 1px;
@@ -24,15 +30,15 @@ const StyledButton = styled.button`
 export function List() {
     return (
         <>
-            <StyledButton>Test</StyledButton>
-            <button className={styles.btn} onClick={() => alert(`Liczba emoji: ${emojis.length}`)}>
-                Pokaż liczbę emoji
-            </button>
-            <ul className={styles.list}>
+            <StyledButton
+                onClick={() => alert(`Liczba emoji: ${emojis.length}`)}
+            >Pokaż liczbę emoji
+            </StyledButton>
+            <StyledList>
                 {emojis.map((emoji) => (
                     <Item key={emoji} emoji={emoji}/>
                 ))}
-            </ul>
+            </StyledList>
         </>
 
     );
