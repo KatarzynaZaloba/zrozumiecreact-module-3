@@ -1,22 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-
-const StyledButton = styled.button`
-  background: transparent;
-  border: solid 1px;
-  padding: 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100px;
-  color: white;
-  transition: background 0.3s,
-  color 0.3s;
-
-  &:hover {
-    color: salmon;
-    background: white;
-  }
-`;
+import {StyledButton} from "../styles/StyledButton.jsx";
 
 const StyledItem = styled.li`
   background: salmon;
